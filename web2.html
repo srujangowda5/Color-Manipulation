@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="jquery-3.6.3.js"></script>
+<script type="text/javascript" src="http://ajax.googleeapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script > $(document).ready(function()
+{
+        $("#toggle").on ("click",function(){
+            $("div").toggle(5000);
+
+        });
+        
+        $("#interval").on ("click",function(){
+           jQuery.fx.interval = 5;
+        });
+});
+</script>
+</head>
+<body>
+    <p> rcb</p>
+    <button id = "toggle"> Toggle div </button>
+    <button id = "interval"> Run animation with less frames </button>
+
+    <div style ="background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: 50px;">
+    </div>
+</body>
+</html>
